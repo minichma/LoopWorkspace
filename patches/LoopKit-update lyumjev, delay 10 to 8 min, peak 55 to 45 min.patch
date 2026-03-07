@@ -1,0 +1,34 @@
+From 416fc278e0c51d081dfca352010113662cc5b304 Mon Sep 17 00:00:00 2001
+From: Markus Minichmayr <markus@tapkey.com>
+Date: Sat, 7 Mar 2026 22:48:28 +0100
+Subject: [PATCH] update lyumjev, delay 10 -> 8 min, peak 55 -> 45 min
+
+---
+ LoopKit/Insulin/ExponentialInsulinModelPreset.swift | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift b/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
+index 7ba9842c..1662fdfe 100644
+--- a/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
++++ b/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
+@@ -42,7 +42,7 @@ extension ExponentialInsulinModelPreset {
+         case .fiasp:
+             return .minutes(55)
+         case .lyumjev:
+-            return .minutes(55)
++            return .minutes(45)
+         case.afrezza:
+             return .minutes(29)
+         }
+@@ -57,7 +57,7 @@ extension ExponentialInsulinModelPreset {
+         case .fiasp:
+             return .minutes(10)
+         case .lyumjev:
+-            return .minutes(10)
++            return .minutes(8)
+         case.afrezza:
+             return .minutes(10)
+         }
+-- 
+2.50.1.windows.1
+
